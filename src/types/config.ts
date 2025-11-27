@@ -50,7 +50,7 @@ export type Config = {
     /** 默认发送到哪些群，如["12345678", "23456789"] */
     default_group: Array<string>,
     /** rsshub地址，可以填自建地址或官方反代 */
-    rsshub_url?: string, // https://rsshub.app
+    rsshub_url?: string | string[], // https://rsshub.app
     /** 默认图片背景 */
     background: string, // https://api.armoe.cn/acg/random
     /** 订阅rss列表 */

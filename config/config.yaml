@@ -47,8 +47,10 @@ rss:
   # sender: []
   # 默认发送到哪些群，如["12345678", "23456789"]
   default_group: []
-  # rsshub地址，可以填自建地址或官方反代
-  rsshub_url: https://rsshub.app
+  # rsshub地址，可以填自建地址或官方反代，支持字符串或数组（失败自动切换）
+  rsshub_url: 
+    - https://rsshub.app
+    - https://rsshub.feeded.xyz
   # 默认图片背景
   background: https://api.armoe.cn/acg/random
   # 订阅rss列表
