@@ -49,8 +49,17 @@ rss:
   default_group: []
   # rsshub地址，可以填自建地址或官方反代，支持字符串或数组（失败自动切换）
   rsshub_url: 
+    - https://rss.datuan.dev
+    - https://rsshub.zytomorrow.top
+    - https://rsshub.asailor.org
+    - https://rsshub.cups.moe
+    - https://rsshub.rssforever.com
+    - https://hub.slarker.me
+    - https://rsshub.pseudoyu.com
+    - https://rsshub.ktachibana.party
+    - https://rsshub.umzzz.com
+    - https://rsshub.isrss.com
     - https://rsshub.app
-    - https://rsshub.feeded.xyz
   # 默认图片背景
   background: https://api.armoe.cn/acg/random
   # 订阅rss列表

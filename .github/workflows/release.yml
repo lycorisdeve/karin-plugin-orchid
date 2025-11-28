@@ -1,9 +1,13 @@
 name: Release and Publish
+# on:
+#   push:
+#     # 监听 main 分支的 push 事件
+#     branches:
+#       - main
+
 on:
-  push:
-    # 监听 main 分支的 push 事件
-    branches:
-      - main
+  workflow_dispatch: #仅手动触发
+
 # 赋予 release-please-action 权限
 permissions:
   contents: write

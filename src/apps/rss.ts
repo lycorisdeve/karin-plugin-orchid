@@ -51,7 +51,15 @@ async function rss() {
     const ps = rssConfig.subscribe_list.map(async rss => {
       // eslint-disable-next-line no-async-promise-executor
       return new Promise<void>(async (resolve, reject) => {
-        const rssHubUrls = Array.isArray(rssConfig.rsshub_url) ? rssConfig.rsshub_url : [rssConfig.rsshub_url!]
+        let rssHubUrls: string[] = []
+        if (Array.isArray(rssConfig.rsshub_url)) {
+          rssHubUrls = rssConfig.rsshub_url
+        } else if (typeof rssConfig.rsshub_url === 'string') {
+          rssHubUrls = rssConfig.rsshub_url.split(',')
+        } else {
+          rssHubUrls = [DEFAULT_RSS_HUB_BASEURL]
+        }
+        rssHubUrls = rssHubUrls.map(u => u.trim()).filter(Boolean)
         for (const rssHubUrl of rssHubUrls) {
           try {
             // eslint-disable-next-line no-template-curly-in-string
