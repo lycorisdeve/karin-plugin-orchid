@@ -14,14 +14,12 @@ karin根目录根据你使用的保管理器选择以下命令其中一个安装
 
    1. 克隆源码
    ```sh
-   git clone --depth=1 -b build https://github.com/ikechan8370/karin-plugin-orchid.git ./plugins/karin-plugin-orchid/
+   git clone --depth=1 -b build https://github.com/lycorisdeve/karin-plugin-orchid.git ./plugins/karin-plugin-orchid/
    ```
    <details>
    <summary>如果你的 git 无法访问至 Github...点击打开查看解决方法</summary>
 
-   > ```sh
-   > git clone --depth=1 -b build https://gitee.com/ikechan8370/karin-plugin-orchid.git ./plugins/karin-plugin-orchid/
-   > ```
+   ~~git clone --depth=1 -b build https://gitee.com/ikechan8370/karin-plugin-orchid.git ./plugins/karin-plugin-orchid/~~
 
    </details>
    <br>
