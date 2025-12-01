@@ -126,7 +126,7 @@ async function rss() {
                       background
                     },
                     pageGotoParams: {
-                      waitUntil: 'networkidle2'
+                      waitUntil: 'networkidle0'
                     }
                   })
 

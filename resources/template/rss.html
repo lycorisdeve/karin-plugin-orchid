@@ -33,6 +33,48 @@
 </div>
 
 </body>
+<script>
+    // 检查图片是否加载完成
+    function checkImages() {
+        const images = document.getElementsByTagName('img');
+        for (let i = 0; i < images.length; i++) {
+            if (!images[i].complete) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // 监听图片加载
+    window.onload = function() {
+        const images = document.getElementsByTagName('img');
+        let loadedCount = 0;
+        
+        if (images.length === 0) {
+             console.log('No images to load');
+             return;
+        }
+
+        for (let i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                loadedCount++;
+            } else {
+                images[i].onload = function() {
+                    loadedCount++;
+                    if (loadedCount === images.length) {
+                        console.log('All images loaded');
+                    }
+                };
+                images[i].onerror = function() {
+                    loadedCount++;
+                    if (loadedCount === images.length) {
+                        console.log('All images loaded (some failed)');
+                    }
+                };
+            }
+        }
+    };
+</script>
 
 </html>
 
