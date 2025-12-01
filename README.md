@@ -2,7 +2,7 @@
 
 [Orchid](https://github.com/ikechan8370/karin-plugin-orchid) 兰插件
 
-一些杂七杂八的小功能集合，纯娱乐
+一些杂七杂八的小功能集合，纯娱乐,自用插件，修改自[Orchid](https://github.com/ikechan8370/karin-plugin-orchid)
 
 ## 安装
 ### 克隆仓库

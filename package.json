@@ -38,7 +38,8 @@
     "node-fetch": "^3.3.2",
     "otplib": "^12.0.1",
     "rss-parser": "^3.13.0",
-    "xml2js": "^0.6.2"
+    "xml2js": "^0.6.2",
+    "yaml": "^2.8.2"
   },
   "devDependencies": {
     "@types/node": "^20.19.25",
@@ -75,6 +76,7 @@
     "exclude": [
       "lib/**/*",
       "@karinjs/**/*"
-    ]
+    ],
+    "ts-web": "./src/web.config.ts"
   }
 }
