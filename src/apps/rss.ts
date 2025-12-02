@@ -126,7 +126,8 @@ async function rss() {
                       background
                     },
                     pageGotoParams: {
-                      waitUntil: 'networkidle0'
+                      waitUntil: ['load', 'networkidle0'],
+                      timeout: 60000
                     }
                   })
 
